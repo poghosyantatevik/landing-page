@@ -3,7 +3,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -33,12 +34,14 @@ nav {
     vertical-align: middle;
     font-weight: 700;
     font-size: 20px;
-    color: #41cc51;
+    color: rgb(34, 209, 34);
+    margin-right: 130px;
 }
 
 .main-header>div:hover,
 .main-header>div:active {
     color: black;
+    cursor: pointer;
 }
 
 .main-nav {
@@ -63,24 +66,26 @@ nav {
 .main-nav__item:hover,
 .main-nav__item:active {
     color: #41cc51;
+    cursor: pointer;
 }
 
 .main-nav__item__button {
     display: inline-block;
     margin: 0 16px;
     border-radius: 11px;
-    background-color: rgb(36, 231, 36);
+    background-color: rgb(34, 209, 34);
     color: white;
     font-weight: 600;
     padding: 9px 20px;
 }
 
-.main-nav__item__button:hover,
-.main-nav__item__button:active {}
-
-main {
-    width: 100%;
+main .container {
+    width: 75%;
     padding: 100px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 section {
@@ -88,9 +93,77 @@ section {
 }
 
 .main-description {
-    position: relative;
-    bottom: 50px;
-    left: 10%;
+    word-spacing: 1.3;
 }
 
-.main-img {}
+.main-description h1 {
+    font-size: 50px;
+    padding: 20px 20px 0 0;
+    line-height: 1;
+    color: rgb(53, 52, 52);
+}
+
+.main-description h5 {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 50px 0 5px;
+    line-height: 1.4;
+    color: rgb(138, 137, 137);
+    margin-right: 60px;
+}
+
+.main-description button {
+    position: relative;
+    border: none;
+    background-color: rgb(34, 209, 34);
+    padding: 10px 25px;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0px 0px 20px rgb(34, 209, 34);
+    bottom: 0;
+    transition: bottom 0.25s ease-out;
+}
+
+.main-description button:hover,
+.main-description button:active {
+    bottom: 2px;
+}
+
+.final-part {
+    width: 100%;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgb(243, 241, 241);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final-part h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(138, 136, 136);
+    margin-bottom: 12px;
+}
+
+.final-part h2 {
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(63, 63, 63);
+    margin: 0;
+}
+
+.final-part p {
+    max-width: 600px;
+    padding: 20px 40px;
+}
+
+.main-nav__item__button:hover,
+.main-nav__item__button:active,
+.main-description button:hover,
+.main-description button:active {
+    cursor: pointer;
+}
